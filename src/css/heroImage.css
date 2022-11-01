@@ -1,0 +1,11 @@
+.heroImage-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}

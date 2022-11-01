@@ -1,13 +1,134 @@
-body {
+/* Grid
+'Section' Container
+'Section' Headline 
+.spacing = 2rem
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+p,
+body,
+tbody,
+.table {
+  /*
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  */
+  font-size: 1.1rem !important;
+  font-family: Raleway !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h3,
+h4 {
+  font-family: Raleway;
+}
+
+h2 {
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+p1 {
+  font-family: Raleway;
+  font-size: 1.1rem;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  margin-bottom: 2vw;
+}
+
+.card-text {
+  font-family: Raleway;
+  font-size: 1.1rem;
+}
+
+.card {
+  /*border: none !important;*/
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Card inline style-properties
+    className="d-flex justify-content-center align-items-center"
+    style={{
+      minHeight: "fit-content",
+      height: "50%",
+      flexDirection: "column",
+    }}
+  */
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar-collapse {
+  align-self: flex-end;
+}
+
+.navbar-toggler {
+  margin-top: 1rem;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Underline + hr */
+.highLight1,
+hr {
+  background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
+  background-position: 0 90%;
+}
+
+h1 {
+  font-size: clamp(1.913rem, calc(12px + 2.475vw), 2.587rem);
+  line-height: 1.1;
+  font-weight: 300 !important;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: clamp(1.575rem, calc(12px + 1.8vw), 2.025rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1.282rem, calc(12px + 1.35vw), 1.688rem);
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: clamp(1.125rem, calc(12px + 0.9vw), 1.35rem);
+  line-height: 1.1;
+}
+
+th {
+  font-size: clamp(1.035rem, calc(12px + 0.54vw), 1.125rem);
+  line-height: 1.1;
+}
+
+span {
+  font-size: clamp(0.9rem, calc(12px + 0.36vw), 1.012rem);
+  line-height: 1.1;
 }

@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Navigation } from "./components/Navbar";
+import { Suspense, lazy } from "react";
+import ErrorBoundary from "./ErrorBoundary";
+import HomePage from "./pages/homePage/HomePage";
+import VietnamPage from "./pages/vietnam/VietnamPage";
+
+import {
+  Switch,
+  Route,
+  Redirect,
+  useHistory,
+  BrowserRouter as Router,
+} from "react-router-dom";
+
+/* Lazy loading ..
+const HomePage = lazy(() => import("./pages/homePage/HomePage"));
+const TonkinExplorer = lazy(() =>
+import("./pages/tonkinExplorer/TonkinExplorer")
+);
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation />
+
+      <Router>
+        <Suspense fallback={<p>Loading...</p>}>
+          <Switch>
+            <Route exact path="/">
+              <ErrorBoundary>
+                <HomePage />
+              </ErrorBoundary>
+            </Route>
+
+            <Route exact path="/vietnam">
+              <ErrorBoundary>
+                <VietnamPage />
+              </ErrorBoundary>
+            </Route>
+          </Switch>
+        </Suspense>
+      </Router>
+    </>
   );
 }
 
