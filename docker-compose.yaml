@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  iet_front:
+    build: .
+    container_name: iET_front_c
+    ports:
+      - "3000:3000"
+
+    stdin_open: true
+    tty: true
