@@ -1,9 +1,9 @@
 [
   {
-    "id": 1,
+    "id": "homePage",
     "isVisible": true,
-    "headline": "Indochina Explorers",
-    "tagline": "Udforsk det charmerende og underfulde Sydøstasien",
+    "pageHeadline": "Indochina Explorers",
+    "pageTagline": "Udforsk det charmerende og underfulde Sydøstasien",
     "heroImage": "/static/media/Wedding.86366101fd82d51b8b56.jpg",
     "subHeadline": "Make your dream come true",
     "subText": [
@@ -11,6 +11,26 @@
       "Datidens rejsende beskev regionen som fuldt af mystik, forskellige farver og mangeartede oplevelser. \n",
       "I dag er denne del af verdenen måske mere divers end den nogenside har været. \n\n",
       "En verden pakket med et utal af oplevelser som venter på at opfylde din rejse-drøm"
+    ],
+    "sectionHeadline": [
+      [
+        "Northern Delights"
+      ],
+      [
+        "Northern Delights2"
+      ]
+    ],
+    "sectionText": [
+      [
+        "Northern Delights Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere\n",
+        "voluptate dicta obcaecati deserunt nobis suscipit eaque? - the test\n"
+      ],
+      [
+        "Northen Delights Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere voluptate\n",
+        "dicta obcaecati deserunt nobis suscipit eaque - Section right?"
+      ]
     ]
   },
   {

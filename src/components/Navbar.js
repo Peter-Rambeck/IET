@@ -1,13 +1,17 @@
 import { Container } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
-import Logo from "../Images/Logo.png";
+import Logo from "../images/Logo.png";
 
 function Navigation() {
   return (
     <>
       {/* Navbar logo */}
-      <Navbar className="center" variant="light" expand="lg">
+      <Navbar
+        className="center flex-grow-1 justify-content-evenly"
+        variant="light"
+        expand="lg"
+      >
         <Navbar.Brand href="/">
           <img
             alt="Indochina Explorers logo"
@@ -19,12 +23,12 @@ function Navigation() {
         </Navbar.Brand>
       </Navbar>
       {/* Navbar menu */}
-      <Navbar flex-lg-column bg="light" variant="light" expand="lg">
+      <Navbar flex-lg-column="true" bg="light" variant="light" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto parent">
+            <Nav className="mx-auto parent ">
               <Nav.Link href="/">Thailand</Nav.Link>
               <Nav.Link href="/vietnam">Vietnam</Nav.Link>
               <Nav.Link href="#link">Malaysia</Nav.Link>

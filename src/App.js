@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { Navigation } from "./components/Navbar";
 import { Suspense, lazy } from "react";
 import ErrorBoundary from "./ErrorBoundary";

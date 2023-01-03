@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import heroImage from "./images/Vietnam.jpg";
-import Headline from "../../components/Headline";
+import PageHeadline from "../../components/PageHeadline";
 import TopBody from "../../components/TopBody";
 
 import "../../css/heroImage.css";
@@ -9,7 +9,7 @@ export default function homePage() {
   return (
     <>
       {/* Page headline */}
-      <Headline id={2} />
+      <PageHeadline id={2} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">

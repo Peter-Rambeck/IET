@@ -1,35 +1,41 @@
+import { Container, Row, Col } from "react-bootstrap";
 import data from "../pages/data.json";
 
 function TopBody({ id }) {
   return (
     <>
-      {data &&
-        data.map((item) => {
-          if (id === item.id) {
-            return (
-              item.subHeadline &&
-              item.subText && (
-                <>
-                  <h3 key={item.id} className={["spacing", "center"].join(" ")}>
-                    {item.subHeadline}
-                  </h3>
-                  <p
-                    key={item.id}
-                    className={["", "top-body-padding"].join(" ")}
-                    style={{
-                      whiteSpace: "pre-wrap",
-                      verticalAlign: "bottom",
-                    }}
-                  >
-                    {item.subText}
-                  </p>
-                </>
-              )
-            );
-          } else {
-            return null;
-          }
-        })}
+      <Container>
+        <Row className="spacing">
+          <Col lg={true}>
+            {data &&
+              data.map((item) => {
+                if (id === item.id) {
+                  return (
+                    item.subHeadline &&
+                    item.subText && (
+                      <div key={item.id}>
+                        <h3 className={["spacing", "center"].join(" ")}>
+                          {item.subHeadline}
+                        </h3>
+                        <p
+                          className={["", "top-body-padding"].join(" ")}
+                          style={{
+                            whiteSpace: "pre-wrap",
+                            verticalAlign: "bottom",
+                          }}
+                        >
+                          {item.subText}
+                        </p>
+                      </div>
+                    )
+                  );
+                } else {
+                  return null;
+                }
+              })}
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
