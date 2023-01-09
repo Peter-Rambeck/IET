@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import data from "../pages/allData.json";
 
-function TopBody({ id }) {
+function TopBody({ props }) {
+  const data = props.data;
+  const id = props.id;
   return (
     <>
       <Container>

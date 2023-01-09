@@ -1,0 +1,47 @@
+TEXT DK
+
+pageHeadline 
+    "Vietnam Explorers",
+
+pageTagline 
+    "Landet med uendelige nuancer af grøn",
+
+subHeadline 
+	"Stolt kulturarv i tidsløst charme"
+
+subText
+	"Vietnam strækker og slanger sig fra de høje bjerge i Sapa til det frodige Mekong Delta.\n",
+    "Tager man rejsen fra Nord til Syd, bugter, udfolder og forandrer landskabet sig.\n",
+    "Den nyere historien er mange bekendt med, men de gamle traditioner lever stadig i bedste velgående.\n\n",
+
+-----
+
+TEXT EN
+
+subText
+    "A proud legacy in timeless Charm\n",
+    "Stretched some 3000 kilometers long from head to tail, it's said that Vietnam has the most nuances of the color green!\n",
+    "The profound beauty becomes evident when you set out to explore Vietnam on an adventure, as a lush tapestry of soaring mountains, otherworldly rock formations, fertile deltas, sinuous rivers opens as you linger through the changing landscape from North to South."    
+
+-----
+
+// 
+"Stretched some 3000 kilometers long from head to tail.\n",
+"In Vietnam you'll discover a fascinating heritage with proud traditions kept true until today.\n",
+"A turbulent history, profound beauty, heritage and culture.\n\n",
+"Halong Bay's magical scenery certainly sets the mind at ease when you slowly cruise in the bay among more than 3000 rising rock islands."
+//
+
+"The rich diverse heritage of more than 54 ethnic minorities comes to life in the mountainous northern Sapa region./n"
+"Stunning views in the highlands and local ethnic villages hides in every valley you pass./n" Smiling rice farmers toiling on the rice terraces on the hilly slopes wave you welcome./n" 
+"In season the northern flowers bloom and display a never-ending kaleidoscope of colors./n"
+ 
+"In central Vietnam, Hue was the old Imperial capital with its sourrounding Citadel on the banks of the perfume river./n" Here the many extravagant tombs of the former emperors are preserved with a story to tell about history and old traditions./n"
+"A wide long sandy beach runs from Da Nang to Hoi An where the old town of Hoi An has kept its rustic charm./n" 
+"Crossing the Hai Van pass gives a marvelous view a the central green coastline./n" 
+
+"Ho Chi Minh City, formerly known as Saigon or in her past days or more intruging/n"
+"The Pearl of the Orient, - encaptivate the colonial charm and romance of the once French Indochina./n"
+"As we move into the mouth of the Mekong Delta you cant help slowly beating your heart to the old rythms of the Mekong River ilfe./n" Cruising from orchard to floating markets, to slide in the smaller canals you get the authentic sights and sounds of Southern Vietnam./n"./n"
+"Take the Indochina Explorer journey/n", 
+"Continue your journey along the Mekong to Cambodia./n"

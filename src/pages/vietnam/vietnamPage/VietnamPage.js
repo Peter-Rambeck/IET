@@ -1,20 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homePageData from "./HomePageData.json";
-import heroImage from "./images/heroImage.jpg";
-import TH_Northern_Delights from "./images/TH_Northern_Delights.jpg";
-import Indochina_Map from "./images/Indochina_Map.png";
-import PageHeadline from "../../components/PageHeadline";
-import TopBody from "../../components/TopBody";
-import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
-import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
-const data = homePageData;
+import heroImage from "./images/Vietnam.jpg";
+import PageHeadline from "../../../components/PageHeadline";
+import TopBody from "../../../components/TopBody";
+import SectionImageLeftWithHorizontalSeparator from "../../../components/SectionImageLeftWithHorizontalSeparator";
+import SectionImageRightNoSeparator from "../../../components/SectionImageRightNoSeparator";
 
-export default function homePage() {
-  const page = "homePage";
+export default function vietnamPage() {
   return (
     <>
       {/* Page headline */}
-      <PageHeadline id={page} />
+      <PageHeadline id={"vietnamPage"} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
@@ -22,7 +17,7 @@ export default function homePage() {
       </Container>
 
       {/* Top body */}
-      <TopBody id={page} />
+      <TopBody id={"vietnamPage"} />
 
       <hr />
 
@@ -32,10 +27,10 @@ export default function homePage() {
 
       <SectionImageLeftWithHorizontalSeparator
         props={{
-          image: Indochina_Map,
+          image: null,
           cardText: "The heart of Indochina",
           alt: "Indochina Explorers map",
-          id: page,
+          id: "vietnamPage",
           sectionHeadline: 0,
           sectionTextId: 0,
         }}
@@ -82,12 +77,12 @@ export default function homePage() {
 
       <SectionImageRightNoSeparator
         props={{
-          id: page,
+          image: null,
+          cardText: "The heart of Indochina",
+          alt: "Indochina Explorers map",
+          id: "vietnamPage",
           sectionHeadline: 1,
           sectionTextId: 1,
-          image: TH_Northern_Delights,
-          cardText: "Northern Delights",
-          alt: "Northern Thailand",
         }}
       />
 
@@ -95,5 +90,3 @@ export default function homePage() {
     </>
   );
 }
-
-export { data };

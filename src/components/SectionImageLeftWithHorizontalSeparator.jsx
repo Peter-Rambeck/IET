@@ -1,5 +1,5 @@
 import { Container, Row, Card, Col } from "react-bootstrap";
-import data from "../pages/data.json";
+import data from "../pages/allData.json";
 
 function SectionImageLeftWithHorizontalSeparator({ props }) {
   return (
@@ -43,8 +43,16 @@ function SectionImageLeftWithHorizontalSeparator({ props }) {
                   if (props.id === item.id) {
                     return (
                       <div key={item.id}>
-                        <h4>{item.sectionHeadline[props.sectionTextId]}</h4>
-                        <p>{item.sectionText[props.sectionTextId]}</p>
+                        <h4>{item.sectionHeadline[props.sectionHeadline]}</h4>
+                        <p
+                          // adds \n newline to rendering
+                          style={{
+                            whiteSpace: "pre-wrap",
+                            verticalAlign: "bottom",
+                          }}
+                        >
+                          {item.sectionText[props.sectionTextId]}
+                        </p>
                       </div>
                     );
                   } else {

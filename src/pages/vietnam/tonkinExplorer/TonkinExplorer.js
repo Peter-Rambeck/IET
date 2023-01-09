@@ -1,111 +1,41 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import TonkinBugten from "./images/tonkinBugten.jpg";
 import TonkinBadge from "./images/tonkinBadge.svg";
-import Headline from "../../components/Headline";
-import TopBody from "../../components/TopBody";
+import TopBody2 from "../../../components/TopBody2";
+//import "../../css/heroImage.css";
+import PageHeadline2 from "../../../components/PageHeadline2";
+import TonkinExplorerData from "./data/tonkinExplorerData.json";
+import DestSpecObject from "./data/DestSpecObject.json";
 
-import "../../css/heroImage.css";
+import TopBodyBadge from "../../../components/TopBodyBadge";
+import DestSpec from "../../../components/DestSpec";
 
-export default function homePage() {
+export default function TonkinExplorer() {
+  const page = "tonkinExplorerPage";
+
   return (
     <>
       {/* component */}
-      <Headline id={2} />
-
+      <PageHeadline2 props={{ id: page, data: TonkinExplorerData }} />
       {/* Head image */}
       <Container fluid className="heroImage-container">
         <img alt="Beach wedding" src={TonkinBugten} className="heroImage" />
       </Container>
-
+      {/* Icon component */}
+      <TopBodyBadge
+        props={{
+          id: page,
+          badge: TonkinBadge,
+          alt: "Tonkin Explorer",
+          cardText: "Den lækre Tonkinbugt",
+        }}
+      />
       {/* Top body */}
-      <Container>
-        <Row className="spacing">
-          <Col lg={true}>
-            <TopBody id={2} />
-          </Col>
-        </Row>
-      </Container>
-      {/* End - Top body */}
-
-      {/* Badge */}
-      <Container>
-        <hr />
-        <Row className="spacing">
-          <img
-            alt="Tonking Explorer"
-            src={TonkinBadge}
-            width="150px"
-            height="150px"
-          />
-        </Row>
-        <hr />
-      </Container>
-      {/* End - Badge */}
-
-      {/* test design */}
-      <Container>
-        <Row className={["spacing", "separator"].join(" ")}>
-          <Col
-            lg={4}
-            className="separator-item-item-start"
-            style={{ lineHeight: "1.7" }}
-          >
-            <>
-              <div style={{ textAlign: "right" }}>
-                <h4>Hvem er vi?</h4>
-              </div>
-            </>
-          </Col>
-          <Col lg={7}>
-            Om du vælger at tage oplevelserne helt tæt på cyklende på mountain
-            bike gennem landskabet og lokale landsbyer eller hoppe på hovedet,
-            har vi været der.
-            <br />
-            <br />
-            Med 20 år som Indokina boende og leverandør til skandinaviske og
-            alverdens rejsende har vi trådt på hver en støvet sti, besøgt alle
-            kroge, dyppet tærende i det klare blå vand fra alle sandstrande og
-            udforsket alt for at på første hånd kan opfylde din specielle
-            rejse-drøm
-          </Col>
-        </Row>
-      </Container>
-
+      <TopBody2 props={{ id: page, data: TonkinExplorerData }} />
+      <hr />
+      {/* Destination specifications */}
+      <DestSpec props={{ id: page, destData: DestSpecObject }} />
       <hr />
     </>
   );
 }
-
-/* Card with hero picture from earlier
-<Row>
-  <>
-    <Card style={{ border: "none", paddingLeft: "0", paddingRight: "0" }}>
-      <Card.Img variant="top" src={Wedding} />
-        <Card.Body>
-          <Card.Text>
-            Explore the charm and wonders of South East Asia
-          </Card.Text>
-        </Card.Body>
-    </Card>
-    <br />
-  </>
-</Row>
-
-
-
-
-        <Container
-          fluid
-          style={{ paddingLeft: "0", paddingRight: "0" }}
-          className="heroPix"
-        >
-          <img
-            alt="wedding"
-            src={Wedding}
-            width="100%"
-            height="auto"
-            className="d-inline-block align-top"
-          />
-        </Container>
-
-*/

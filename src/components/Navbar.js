@@ -29,9 +29,12 @@ function Navigation() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto parent ">
-              <Nav.Link href="/">Thailand</Nav.Link>
+              <Nav.Link href="/thailand">Thailand</Nav.Link>
               <Nav.Link href="/vietnam">Vietnam</Nav.Link>
+              <Nav.Link href="/tonkin">Tonkin</Nav.Link>
               <Nav.Link href="#link">Malaysia</Nav.Link>
+              <Nav.Link href="#link">About</Nav.Link>
+              {/*
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -45,6 +48,7 @@ function Navigation() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
+              */}
             </Nav>
           </Navbar.Collapse>
         </Container>

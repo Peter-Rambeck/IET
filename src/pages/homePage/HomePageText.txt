@@ -1,0 +1,65 @@
+TEXT DK
+
+pageHeadline 
+    "Indochina Explorers",
+
+pageTagline 
+    "Udforsk et charmerende og underfuldt Sydøstasien",
+
+subHeadline 
+    "Lev din drøm",
+
+"subText": [
+        "Sydøstasien var engang bedre kendt som Indokina, den spændende region som på mystisk vis forbinder Indien og Kina. \n",
+        "Her hvor kultur, arv og paradis smelter sammen\n."
+        "Datidens rejsende beskev regionen som fuldt af mystik, forskellige farver og mangeartede oplevelser. \n",
+        "I dag er denne del af verdenen måske mere divers end den nogenside\n\n",
+        "Indokina fortryller en fantastisk region fuld af skønhed, menneskelig varme med latter og smil.\n"
+        "En verden pakket med et utal af oplevelser som venter på at opfylde din rejse-drøm"
+    ],
+
+ "sectionHeadline": [
+      [
+        "Vores Indokina"
+      ],
+      [
+        "Vores Indokina 2"
+      ]
+    ],
+
+"sectionText": [
+      [
+        "I hjertet af Sydøstasien forbinder vores Indokina det bedste af Thailand & Vietnam & Malaysia\n",
+        "Vores Indokina konverterer din drøm til virkelige rejseoplevelser der sætter sig fast minderne.\n",
+        "Udlev din drøm på kryds og tværs i den forunderlige sammensmeltning"
+      ],
+      [
+        "Northen Delights Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere voluptate\n",
+        "dicta obcaecati deserunt nobis suscipit eaque - Section right?"
+      ]
+    ]
+
+
+-----
+
+TEXT EN
+
+pageHeadline 
+    "Indochina Explorers",
+
+pageTagline 
+    "Udforsk det charmerende og underfulde Sydøstasien",
+
+subHeadline 
+    "Make your dream come true",
+
+------
+
+
+
+Make your dream come true
+Where culture, heritage and paradise converge.
+Indochina enrapture a stunning region full of beauty, human warmth with laughter and smiles.
+
+As you have now arrived directly in the heart of your dream vacation, we are here for you to - Live it out.

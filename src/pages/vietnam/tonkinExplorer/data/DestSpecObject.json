@@ -1,0 +1,31 @@
+[
+  {
+    "id": "tonkinExplorerPage",
+    "content": [
+      {
+        "label": "HANOI",
+        "labelContent": [
+          "I Hanoi udforsker vi de spændende seværdigheder til pulsen i den livlige by.\n",
+          "Vi læner os tilbage i en traditionel Cyclo ( rickshaw ) gennem de snævre gader i det charmerende gamle kvarter.\n",
+          "Besøg til litteraturens tempel, ‘Hanoi Hilton’, B52 søen, vanddukker og meget mere."
+        ]
+      },
+      {
+        "label": "Tab 2",
+        "labelContent": "Shitty content 2"
+      },
+      {
+        "label": "Tab 3",
+        "labelContent": "Shitty content 3"
+      },
+      {
+        "label": "Tab 4",
+        "labelContent": "Shitty content 4"
+      },
+      {
+        "label": "Tab 5",
+        "labelContent": "Shitty content 5"
+      }
+    ]
+  }
+]

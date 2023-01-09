@@ -1,7 +1,9 @@
 import { Container } from "react-bootstrap";
-import data from "../pages/allData.json";
 
-function PageHeadline({ id }) {
+function PageHeadline2({ props }) {
+  const data = props.data;
+  const id = props.id;
+
   return (
     <>
       <Container className={["spacing-headline"].join(" ")}>
@@ -26,4 +28,4 @@ function PageHeadline({ id }) {
   );
 }
 
-export default PageHeadline;
+export default PageHeadline2;

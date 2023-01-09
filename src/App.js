@@ -2,7 +2,9 @@ import { Navigation } from "./components/Navbar";
 import { Suspense, lazy } from "react";
 import ErrorBoundary from "./ErrorBoundary";
 import HomePage from "./pages/homePage/HomePage";
-import VietnamPage from "./pages/vietnam/VietnamPage";
+import VietnamPage from "./pages/vietnam/vietnamPage/VietnamPage";
+import TonkinExplorerPage from "./pages/vietnam/tonkinExplorer/TonkinExplorer";
+import ThailandPage from "./pages/thailand/ThailandPage";
 
 import {
   Switch,
@@ -32,10 +34,27 @@ function App() {
                 <HomePage />
               </ErrorBoundary>
             </Route>
+            <Route path="/thailand">
+              <ErrorBoundary>
+                <ThailandPage />
+              </ErrorBoundary>
+            </Route>
 
-            <Route exact path="/vietnam">
+            <Route path="/vietnam">
               <ErrorBoundary>
                 <VietnamPage />
+              </ErrorBoundary>
+            </Route>
+
+            <Route path="/tonkin">
+              <ErrorBoundary>
+                <TonkinExplorerPage />
+              </ErrorBoundary>
+            </Route>
+
+            <Route path="/about">
+              <ErrorBoundary>
+                <HomePage />
               </ErrorBoundary>
             </Route>
           </Switch>

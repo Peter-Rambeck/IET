@@ -1,83 +1,41 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
-import heroImage from "./images/heroImage.jpg";
-import Indochina_Map from "./images/Indochina_Map.png";
-import TH_Northern_Delights from "./images/TH_Northern_Delights.jpg";
-import Headline from "../../components/Headline";
+import { Container, Row, Col } from "react-bootstrap";
+import heroImage from "./images/BangkokGrandPalace.jpg";
+import PageHeadline from "../../components/PageHeadline";
 import TopBody from "../../components/TopBody";
+import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
+import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
 
-import "../../css/heroImage.css";
-
-export default function homePage() {
+export default function vietnamPage() {
+  const page = "thailandPage";
   return (
     <>
       {/* Page headline */}
-      <Headline id={1} />
+      <PageHeadline id={page} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
-        <img alt="Beach wedding" src={heroImage} className="heroImage" />
+        <img alt="Bangkok Grand Palace" src={heroImage} className="heroImage" />
       </Container>
 
       {/* Top body */}
-      <Container>
-        <Row className="spacing">
-          <Col lg={true}>
-            <TopBody id={1} />
-          </Col>
-        </Row>
-      </Container>
+      <TopBody id={page} />
 
       <hr />
 
-      {/* First section  */}
+      {/* First section index [0] */}
+      {/* SectionImageLeft */}
       {/* Indochina Map + Indochina text  */}
-      <Container>
-        <Row className={["spacing", "separator", "separator-center"].join(" ")}>
-          <Col
-            className="separator-item-item-start" // d-flex
-            lg={true}
-          >
-            <>
-              <Card
-                style={{
-                  border: "0",
-                }}
-              >
-                <Card.Img
-                  variant="top"
-                  src={Indochina_Map}
-                  alt="Indochina Explorers map"
-                  style={{
-                    width: "50%",
-                    height: "50%",
-                  }}
-                />
-                <Card.Body>
-                  <Card.Text>The heart of Indochina</Card.Text>
-                </Card.Body>
-              </Card>
-            </>
-          </Col>
 
-          <Col
-            lg={true}
-            //className="d-flex justify-content-center align-items-center separator-item-item-end"
-            style={{ lineHeight: "1.7" }}
-          >
-            <>
-              <div>
-                <h4>Northen Delights</h4>
-                <p>
-                  {" "}
-                  Northen Delights Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Molestias aut, repellat ipsum facere
-                  voluptate dicta obcaecati deserunt nobis suscipit eaque?
-                </p>
-              </div>
-            </>
-          </Col>
-        </Row>
-      </Container>
+      <SectionImageLeftWithHorizontalSeparator
+        props={{
+          image: null,
+          cardText: "The heart of Indochina",
+          alt: "Indochina Explorers map",
+          id: page,
+          sectionHeadline: 0,
+          sectionTextId: 0,
+        }}
+      />
 
       <hr />
 
@@ -114,74 +72,22 @@ export default function homePage() {
       <hr />
 
       {/* Product section  */}
-      <Container>
-        <Row className="spacing">
-          <Col
-            lg={true}
-            className="d-flex justify-content-center align-items-center"
-            style={{ lineHeight: "1.7" }}
-          >
-            <>
-              <div>
-                <h4>Northen Delights</h4>
-                Northen Delights Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Molestias aut, repellat ipsum facere voluptate
-                dicta obcaecati deserunt nobis suscipit eaque?
-              </div>
-            </>
-          </Col>
-          <Col lg={true}>
-            <>
-              <Card
-                style={{
-                  border: "0",
-                }}
-              >
-                <Card.Img variant="top" src={TH_Northern_Delights} />
-                <Card.Body>
-                  <Card.Text>
-                    Explore the charm and wonders of South East Asia
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </>
-          </Col>
-        </Row>
-      </Container>
+      {/* First section index [0] */}
+      {/* SectionImageRight - no separator */}
+      {/* Indochina Map + Indochina text  */}
+
+      <SectionImageRightNoSeparator
+        props={{
+          image: null,
+          cardText: "The heart of Indochina",
+          alt: "Indochina Explorers map",
+          id: page,
+          sectionHeadline: 1,
+          sectionTextId: 1,
+        }}
+      />
+
+      <hr />
     </>
   );
 }
-
-/* Card with hero picture from earlier
-<Row>
-  <>
-    <Card style={{ border: "none", paddingLeft: "0", paddingRight: "0" }}>
-      <Card.Img variant="top" src={Wedding} />
-        <Card.Body>
-          <Card.Text>
-            Explore the charm and wonders of South East Asia
-          </Card.Text>
-        </Card.Body>
-    </Card>
-    <br />
-  </>
-</Row>
-
-
-
-
-        <Container
-          fluid
-          style={{ paddingLeft: "0", paddingRight: "0" }}
-          className="heroPix"
-        >
-          <img
-            alt="wedding"
-            src={Wedding}
-            width="100%"
-            height="auto"
-            className="d-inline-block align-top"
-          />
-        </Container>
-
-*/

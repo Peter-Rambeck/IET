@@ -1,5 +1,5 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { data } from "../pages/homePage/HomePage";
+import data from "../pages/allData.json";
 
 // Add separator .. className="separator", //
 
@@ -16,7 +16,15 @@ export default function SectionImageRightNoSeparator({ props }) {
                     return (
                       <div key={item.id}>
                         <h4>{item.sectionHeadline[props.sectionTextId]}</h4>
-                        <p>{item.sectionText[props.sectionTextId]}</p>
+                        <p
+                          // adds \n newline to rendering
+                          style={{
+                            whiteSpace: "pre-wrap",
+                            verticalAlign: "bottom",
+                          }}
+                        >
+                          {item.sectionText[props.sectionTextId]}
+                        </p>
                       </div>
                     );
                   } else {
