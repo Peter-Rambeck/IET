@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tonkinExplorerPage",
+    "content": [
+      {
+        "label": "Dag:1",
+        "c1": "København",
+        "c2": "Mellemlanding i Bangkok"
+      },
+      {
+        "label": "Dag:2",
+        "c1": "Hanoi",
+        "c2": "Ankomst og transfer til hotellet"
+      },
+      {
+        "label": "Dag:3",
+        "c1": "Hanoi",
+        "c2": "Fuld dags byrundtur"
+      },
+      {
+        "label": "Dag:4",
+        "c1": "Ninh Binh",
+        "c2": "På cykel\nVan Long reservatet og Kenh Ga flydende landsby"
+      },
+      {
+        "label": "Dag:5",
+        "c1": "Ninh Binh",
+        "c2": "På cykel\nDen gamle hovedstad Hoa Lu og Tam Coc - Halong Bay på land."
+      },
+      {
+        "label": "Dag:6",
+        "c1": "Halong Bay",
+        "c2": "Halong Bay overnight cruise"
+      },
+      {
+        "label": "Dag:7",
+        "c1": "Halong Bay - Hanoi",
+        "c2": "Efter endt cruise, transport retur til Hanoi"
+      },
+      {
+        "label": "Dag:8",
+        "c1": "Hanoi",
+        "c2": "Afrejse, måske forsæt til en lækker strand i enten Vietnam eller Thailand\n Flyskifte i Bangkok med mulighed for et par strandage i Hus Hin."
+      },
+      {
+        "label": "Dag:9",
+        "c1": "København",
+        "c2": "Ankomst."
+      }
+    ]
+  }
+]

@@ -8,23 +8,35 @@ export default function DestSpec({ props }) {
     <>
       <Container>
         <Row className={["spacing", "separator-center"].join(" ")}>
-          <h2 className="center">
-            Turen i <br />
-            overblik
+          <h2>
+            Rute og <br />
+            højdepunkter
+            <br />-
           </h2>
-          <p className={["center"].join(" ")}>
-            - <br />7 dage / 6 nætter
-            <br />2 cykledage <br />-
-          </p>
+        </Row>
+        <Row>
           <>
+            <Col lg={4}>
+              <>
+                <Card
+                  style={{
+                    border: "0",
+                  }}
+                >
+                  <Card.Img
+                    variant="bottom"
+                    src={props.image}
+                    alt={props.alt}
+                  />
+                  <Card.Body>
+                    <Card.Text>{props.cardText}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </>
+            </Col>
             <Col lg={true} style={{ lineHeight: "1.5" }}>
               <Table responsive="sm">
-                <thead>
-                  <tr>
-                    <th>Destination</th>
-                    <th>Dage</th>
-                  </tr>
-                </thead>
+                <thead></thead>
                 {destData &&
                   destData.map((item) => {
                     if (id === item.id) {
@@ -46,15 +58,20 @@ export default function DestSpec({ props }) {
                                     }}
                                   >
                                     {nItem.label}
-                                    <br />
-                                    {nItem.labelContent}
                                   </td>
                                   <td
                                     style={{
                                       padding: "1em",
                                     }}
                                   >
-                                    2
+                                    {nItem.c1}
+                                  </td>
+                                  <td
+                                    style={{
+                                      padding: "1em",
+                                    }}
+                                  >
+                                    {nItem.c2}
                                   </td>
                                 </tr>
                               ))}
@@ -68,20 +85,6 @@ export default function DestSpec({ props }) {
               </Table>
             </Col>
           </>
-          <Col lg={4}>
-            <>
-              <Card
-                style={{
-                  border: "0",
-                }}
-              >
-                <Card.Img variant="bottom" src={props.image} alt={props.alt} />
-                <Card.Body>
-                  <Card.Text>{props.cardText}</Card.Text>
-                </Card.Body>
-              </Card>
-            </>
-          </Col>
         </Row>
       </Container>
     </>

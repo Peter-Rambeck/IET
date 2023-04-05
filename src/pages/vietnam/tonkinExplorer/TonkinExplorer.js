@@ -1,16 +1,24 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
+// Images
 import TonkinBugten from "./images/tonkinBugten.jpg";
 import TonkinBadge from "./images/tonkinBadge.svg";
+import TonkinDiscoveryMap from "./images/mapTonkinDiscovery.png";
+import TonkinDiscoveryTemple from "./images/tonkinDiscoveryTemple.jpg";
+import HalongBay from "./images/halongBayParralax.jpg";
+// Components
 import TopBody2 from "../../../components/TopBody2";
-//import "../../css/heroImage.css";
-import PageHeadline2 from "../../../components/PageHeadline2";
-import TonkinExplorerData from "./data/tonkinExplorerData.json";
-import DestSpecObject from "./data/DestSpecObject.json";
-
+import Toggle from "../../../components/Toggle";
 import TopBodyBadge from "../../../components/TopBodyBadge";
 import DestSpec from "../../../components/DestSpec";
-//import "../../css/heroImage.css";
-import ToggleForm from "../../../components/ToggleForm";
+import DestHighlightsWithImageLeft from "../../../components/DestHighlightsWithImageLeft";
+//import ToggleForm from "../../../components/ToggleForm";
+import SubNav from "../../../components/SubNav";
+import PageHeadline2 from "../../../components/PageHeadline2";
+// Data
+import TonkinExplorerData from "./data/tonkinExplorerData.json";
+import DestSpecObject from "./data/DestSpecObject.json";
+import DestToggleObject from "./data/DestToggleObject.json";
+import DestRouteHighlightsObject from "./data/DestRouteHighlightsObject.json";
 
 export default function TonkinExplorer() {
   const page = "tonkinExplorerPage";
@@ -25,6 +33,7 @@ export default function TonkinExplorer() {
         <img alt="Beach wedding" src={TonkinBugten} className="heroImage" />
       </Container>
 
+      <SubNav />
       {/* Icon component */}
       <TopBodyBadge
         props={{
@@ -42,12 +51,53 @@ export default function TonkinExplorer() {
       </Container>
 
       {/* Destination specifications */}
-      <DestSpec props={{ id: page, destData: DestSpecObject }} />
+      <DestSpec
+        props={{
+          id: page,
+          destData: DestSpecObject,
+          image: TonkinDiscoveryMap,
+          alt: "Rejse rute Tonkin Explorer",
+          cardText: "Rejserute",
+        }}
+      />
+
       <Container>
         <hr />
       </Container>
 
-      <ToggleForm />
+      <Container fluid>
+        <Card
+          style={{
+            border: "0",
+          }}
+        >
+          <Card.Img src={HalongBay} alt="Rock" />
+          <Card.Body>
+            <Card.Text>Rock n Loll</Card.Text>
+          </Card.Body>
+        </Card>
+      </Container>
+
+      <Container>
+        <hr />
+      </Container>
+
+      {/* Destination route and highlights */}
+      <DestHighlightsWithImageLeft
+        props={{
+          id: page,
+          destData: DestRouteHighlightsObject,
+          image: TonkinDiscoveryTemple,
+          alt: "Tam Coc tempel",
+          cardText: "Tam Coc tempel",
+        }}
+      />
+
+      <Container>
+        <hr />
+      </Container>
+
+      <Toggle props={{ data: DestToggleObject }} />
       <hr />
     </>
   );

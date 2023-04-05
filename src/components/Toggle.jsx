@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 // import { Text2 } from "../../components/TonkinExplorersTexts";
 
+/*
 const tabs = [
   {
     label: "Dag 1",
@@ -24,20 +25,23 @@ const tabs = [
     content: "Shitty content 5",
   },
 ];
+*/
 
-export default function Toggle() {
-  const x = tabs.length;
-  console.log("x: " + x);
-
+export default function Toggle({ props }) {
+  const tabs = props.data;
   let first = tabs.slice(0, Math.round(tabs.length / 2));
   let firstCalc = first.length - tabs.length - -tabs.length;
   let second = tabs.slice(firstCalc, tabs.length);
-  console.log("first: " + first);
-  console.log("firstCalc: " + firstCalc);
-  console.log("second: " + second);
 
   return (
-    <Container className="spacing">
+    <Container>
+      <Row className={["spacing", "separator-center"].join(" ")}>
+        <h2>
+          Dag for dag <br />
+          program
+          <br />-
+        </h2>
+      </Row>
       <Row>
         <>
           <Col md={6}>
@@ -45,8 +49,17 @@ export default function Toggle() {
               <Accordion>
                 <>
                   {first.map((item) => (
-                    <Accordion.Item eventKey={item.label}>
-                      <Accordion.Header>{item.label}</Accordion.Header>
+                    <Accordion.Item
+                      key={item.id}
+                      eventKey={item.label}
+                      style={{
+                        fontSize: "1rem",
+                        whiteSpace: "pre-wrap", //verticalAlign: "bottom",
+                      }}
+                    >
+                      <Accordion.Button style={{}}>
+                        {item.label}
+                      </Accordion.Button>
                       <Accordion.Body>{item.content}</Accordion.Body>
                     </Accordion.Item>
                   ))}
@@ -59,8 +72,15 @@ export default function Toggle() {
               <Accordion>
                 <>
                   {second.map((item) => (
-                    <Accordion.Item eventKey={item.label}>
-                      <Accordion.Header>{item.label}</Accordion.Header>
+                    <Accordion.Item
+                      key={item.label}
+                      eventKey={item.label}
+                      style={{
+                        fontSize: "1rem",
+                        whiteSpace: "pre-wrap", //verticalAlign: "bottom",
+                      }}
+                    >
+                      <Accordion.Button>{item.label}</Accordion.Button>
                       <Accordion.Body>{item.content}</Accordion.Body>
                     </Accordion.Item>
                   ))}

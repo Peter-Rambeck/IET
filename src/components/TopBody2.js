@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import data from "../pages/allData.json";
 
 function TopBody({ props }) {
   const data = props.data;
@@ -16,9 +15,9 @@ function TopBody({ props }) {
                     item.subHeadline &&
                     item.subText && (
                       <div key={item.id}>
-                        <h3 className={["spacing", "center"].join(" ")}>
+                        <h2 className={["spacing", "center"].join(" ")}>
                           {item.subHeadline}
-                        </h3>
+                        </h2>
                         <p
                           className={["", "top-body-padding"].join(" ")}
                           // adds \n newline to rendering

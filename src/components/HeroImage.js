@@ -19,9 +19,9 @@ function HeroImage() {
                       <img
                         src={item.heroImage}
                         alt="Beach wedding"
-                        width="100%"
-                        height="auto"
-                        className="d-inline-block align-top"
+                        //width="100%"
+                        //height="auto"
+                        //className="d-inline-block align-top"
                       />
                     </>
                   ) : null}
