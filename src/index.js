@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import "./css/separator.css";
-import "./css/spacing.css";
-import "./css/heroImage.css";
+import "./assets/css/index.css";
+import "./assets/css/separator.css";
+import "./assets/css/spacing.css";
+import "./assets/css/heroImage.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import heroImage from "./images/Vietnam.jpg";
+import heroImage from "../../../assets/img/vietnamPage/Vietnam.jpg";
 import PageHeadline from "../../../components/PageHeadline";
 import TopBody from "../../../components/TopBody";
 import SectionImageLeftWithHorizontalSeparator from "../../../components/SectionImageLeftWithHorizontalSeparator";

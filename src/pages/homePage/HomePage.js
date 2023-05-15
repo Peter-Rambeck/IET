@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homePageData from "./HomePageData.json";
-import heroImage from "./images/heroImage.jpg";
-import TH_Northern_Delights from "./images/TH_Northern_Delights.jpg";
-import Indochina_Map from "./images/Indochina_Map.png";
+import homePageData from "../../assets/json/homePage/HomePageData.json";
+import heroImage from "../../assets/img/homePage/heroImage.jpg";
+import TH_Northern_Delights from "../../assets/img/homePage/TH_Northern_Delights.jpg";
+import Indochina_Map from "../../assets/img/homePage/Indochina_Map.png";
 import PageHeadline from "../../components/PageHeadline";
 import TopBody from "../../components/TopBody";
 import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
