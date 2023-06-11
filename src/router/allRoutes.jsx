@@ -6,6 +6,7 @@ import HomePage from "../pages/homePage/HomePage";
 import VietnamPage from "../pages/vietnam/vietnamPage/VietnamPage";
 import TonkinExplorerPage from "../pages/vietnam/tonkinExplorer/TonkinExplorer";
 import ThailandPage from "../pages/thailand/ThailandPage";
+import Template from "../pages/Template";
 
 import {
   Switch,
@@ -55,7 +56,7 @@ const AllRoutes = () => {
 
             <Route path="/about">
               <ErrorBoundary>
-                <HomePage />
+                <Template />
               </ErrorBoundary>
             </Route>
           </Switch>

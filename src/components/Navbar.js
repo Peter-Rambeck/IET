@@ -33,7 +33,7 @@ function Navigation() {
               <Nav.Link href="/vietnam">Vietnam</Nav.Link>
               <Nav.Link href="/tonkin">Tonkin</Nav.Link>
               <Nav.Link href="#link">Malaysia</Nav.Link>
-              <Nav.Link href="#link">About</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
               {/*
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

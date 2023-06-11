@@ -1,35 +1,35 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homePageData from "../../assets/json/homePage/HomePageData.json";
-import heroImage from "../../images/homePage/heroImage.jpg";
-import TH_Northern_Delights from "../../images/homePage/TH_Northern_Delights.jpg";
-import Indochina_Map from "../../images/homePage/Indochina_Map.png";
-import PageHeadline from "../../components/PageHeadline";
-import TopBody from "../../components/TopBody";
-import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
-import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
+import homePageData from "./../assets/json/homePage/HomePageData.json";
+import heroImage from "../images/homePage/heroImage.jpg";
+import TH_Northern_Delights from "../images/homePage/TH_Northern_Delights.jpg";
+import Indochina_Map from "../images/homePage/Indochina_Map.png";
+import PageHeadline from "./../components/PageHeadline";
+import TopBody from "./../components/TopBody";
+import SectionImageLeftWithHorizontalSeparator from "./../components/SectionImageLeftWithHorizontalSeparator";
+import SectionImageRightNoSeparator from "./../components/SectionImageRightNoSeparator";
 const data = homePageData;
 
-export default function homePage() {
-  const page = "homePage";
+export default function template() {
+  const page = "template";
   return (
     <>
       {/* Page headline */}
-      <PageHeadline id={page} />
+      {/* <PageHeadline id={page} /> */}
+
+      <Container className={["spacing-headline", "center"].join(" ")}>
+        <h1>Template</h1>
+      </Container>
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
         <img alt="Beach wedding" src={heroImage} className="heroImage" />
       </Container>
-
       {/* Top body */}
       <TopBody id={page} />
-
       <hr />
-
       {/* First section index [0] */}
       {/* SectionImageLeft */}
       {/* Indochina Map + Indochina text  */}
-
       <SectionImageLeftWithHorizontalSeparator
         props={{
           image: Indochina_Map,
@@ -40,9 +40,7 @@ export default function homePage() {
           sectionTextId: 0,
         }}
       />
-
       <hr />
-
       {/* Breaker section  */}
       {/* test design - Hvem er vi */}
       <Container>
@@ -72,14 +70,11 @@ export default function homePage() {
           </Col>
         </Row>
       </Container>
-
       <hr />
-
       {/* Product section  */}
       {/* First section index [0] */}
       {/* SectionImageRight - no separator */}
       {/* Indochina Map + Indochina text  */}
-
       <SectionImageRightNoSeparator
         props={{
           id: page,
@@ -90,7 +85,6 @@ export default function homePage() {
           alt: "Northern Thailand",
         }}
       />
-
       <hr />
     </>
   );
