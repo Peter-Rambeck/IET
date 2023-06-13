@@ -17,7 +17,7 @@ export default function template() {
       {/* <PageHeadline id={page} /> */}
 
       <Container className={["spacing-headline", "center"].join(" ")}>
-        <h1>Template</h1>
+        <h1>Template TEST</h1>
       </Container>
 
       {/* Head image */}
