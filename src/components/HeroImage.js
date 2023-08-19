@@ -1,7 +1,8 @@
 import { Container } from "react-bootstrap";
-import data from "../pages/homePage/data.json";
+//import data from "../pages/homePage/data.json";
 
 function HeroImage() {
+  /*
   return (
     <>
       {data &&
@@ -31,7 +32,9 @@ function HeroImage() {
           );
         })}
     </>
+   
   );
+   */
 }
 
 export default HeroImage;

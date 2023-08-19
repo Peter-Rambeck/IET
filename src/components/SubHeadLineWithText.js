@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 //import data from "../assets/json/allData.json";
 
-function TopBody({ id, data }) {
+function SubHeadLineWithText({ props, data }) {
   return (
     <>
       <Container>
@@ -9,7 +9,7 @@ function TopBody({ id, data }) {
           <Col lg={true}>
             {data &&
               data.map((item) => {
-                if (id === item.id) {
+                if (props.id === item.id) {
                   return (
                     item.subHeadline &&
                     item.subText && (
@@ -19,14 +19,15 @@ function TopBody({ id, data }) {
                         </h3>*/}
                         <div
                           className={[
-                            "h3",
+                            "h2",
                             "subHeadline",
                             "spacing",
                             "center",
                           ].join(" ")}
-                        >
-                          {item.subHeadline}
-                        </div>
+                          dangerouslySetInnerHTML={{
+                            __html: item.subHeadline[props.subHeadline],
+                          }}
+                        ></div>
                         <p
                           className={[
                             "",
@@ -39,9 +40,10 @@ function TopBody({ id, data }) {
                             whiteSpace: "pre-wrap",
                             verticalAlign: "bottom",
                           }}
-                        >
-                          {item.subText}
-                        </p>
+                          dangerouslySetInnerHTML={{
+                            __html: item.subText[props.subText],
+                          }}
+                        ></p>
                       </div>
                     )
                   );
@@ -56,7 +58,7 @@ function TopBody({ id, data }) {
   );
 }
 
-export default TopBody;
+export default SubHeadLineWithText;
 
 /*{data &&
           data.map((item, key) => {

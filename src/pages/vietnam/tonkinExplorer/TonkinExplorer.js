@@ -13,7 +13,7 @@ import DestSpec from "../../../components/DestSpec";
 import DestHighlightsWithImageLeft from "../../../components/DestHighlightsWithImageLeft";
 //import ToggleForm from "../../../components/ToggleForm";
 import SubNav from "../../../components/SubNav";
-import PageHeadline2 from "../../../components/PageHeadline2";
+import PageHeadline from "../../../components/PageHeadline";
 // Data
 import TonkinExplorerData from "./data/tonkinExplorerData.json";
 import DestSpecObject from "./data/DestSpecObject.json";
@@ -26,7 +26,7 @@ export default function TonkinExplorer() {
   return (
     <>
       {/* component */}
-      <PageHeadline2 props={{ id: page, data: TonkinExplorerData }} />
+      <PageHeadline props={{ id: page, data: TonkinExplorerData }} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">

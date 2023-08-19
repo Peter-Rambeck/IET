@@ -1,24 +1,36 @@
 import { Container, Row, Col } from "react-bootstrap";
-import heroImage from "./images/BangkokGrandPalace.jpg";
+import heroImage from "../../images/thailandPage/BangkokGrandPalace.jpg";
 import PageHeadline from "../../components/PageHeadline";
-import TopBody from "../../components/TopBody";
+import SubHeadLineWithText from "../../components/SubHeadLineWithText";
 import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
 import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
+import data from "../../assets/json/thailand/ThailandEN.json";
 
-export default function vietnamPage() {
+export default function thailandPage() {
   const page = "thailandPage";
   return (
     <>
       {/* Page headline */}
-      <PageHeadline id={page} />
+      <PageHeadline id={page} data={data} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
-        <img alt="Bangkok Grand Palace" src={heroImage} className="heroImage" />
+        <img alt="Beach wedding" src={heroImage} className="heroImage" />
       </Container>
 
       {/* Top body */}
-      <TopBody id={page} />
+      <SubHeadLineWithText
+        props={{
+          image: "",
+          cardText: "",
+          alt: "",
+          id: page,
+          subHeadline: 0,
+          subText: 0,
+          textAlign: "",
+        }}
+        data={data}
+      />
 
       <hr />
 

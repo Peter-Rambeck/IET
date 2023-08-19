@@ -1,7 +1,7 @@
 import { Container, Row, Card, Col } from "react-bootstrap";
 //import data from "../assets/json/allData.json";
 
-function SectionImageLeftWithHorizontalSeparator({ props, data }) {
+function TestCompImageLightWithHorizontalSeperator({ props, data }) {
   return (
     <>
       <Container>
@@ -43,16 +43,23 @@ function SectionImageLeftWithHorizontalSeparator({ props, data }) {
                   if (props.id === item.id) {
                     return (
                       <div key={item.id}>
-                        <h4>{item.sectionHeadline[props.sectionHeadline]}</h4>
+                        <div
+                          style={{ textAlign: "" }}
+                          className={["h4"].join(" ")}
+                          dangerouslySetInnerHTML={{
+                            __html: item.sectionHeadline[props.sectionHeadline],
+                          }}
+                        ></div>
                         <p
-                          // adds \n newline to rendering
+                          className={[].join(" ")}
                           style={{
                             whiteSpace: "pre-wrap",
                             verticalAlign: "bottom",
                           }}
-                        >
-                          {item.sectionText[props.sectionTextId]}
-                        </p>
+                          dangerouslySetInnerHTML={{
+                            __html: item.sectionText[props.sectionText],
+                          }}
+                        ></p>
                       </div>
                     );
                   } else {
@@ -67,4 +74,4 @@ function SectionImageLeftWithHorizontalSeparator({ props, data }) {
   );
 }
 
-export default SectionImageLeftWithHorizontalSeparator;
+export default TestCompImageLightWithHorizontalSeperator;

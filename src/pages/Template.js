@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homePageData from "./../assets/json/homePage/HomePageData.json";
 import heroImage from "../images/homePage/heroImage.jpg";
 import TH_Northern_Delights from "../images/homePage/TH_Northern_Delights.jpg";
 import Indochina_Map from "../images/homePage/Indochina_Map.png";
@@ -7,40 +6,42 @@ import PageHeadline from "./../components/PageHeadline";
 import TopBody from "./../components/TopBody";
 import SectionImageLeftWithHorizontalSeparator from "./../components/SectionImageLeftWithHorizontalSeparator";
 import SectionImageRightNoSeparator from "./../components/SectionImageRightNoSeparator";
-const data = homePageData;
+import data from "../assets/json/template/Template.json";
 
 export default function template() {
   const page = "template";
   return (
     <>
       {/* Page headline */}
-      {/* <PageHeadline id={page} /> */}
-
-      <Container className={["spacing-headline", "center"].join(" ")}>
-        <h1>Template TEST</h1>
-      </Container>
+      <PageHeadline id={page} data={data} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
         <img alt="Beach wedding" src={heroImage} className="heroImage" />
       </Container>
+
       {/* Top body */}
-      <TopBody id={page} />
+      <TopBody id={page} data={data} />
+
       <hr />
+
       {/* First section index [0] */}
       {/* SectionImageLeft */}
       {/* Indochina Map + Indochina text  */}
       <SectionImageLeftWithHorizontalSeparator
         props={{
           image: Indochina_Map,
-          cardText: "The heart of Indochina",
-          alt: "Indochina Explorers map",
+          cardText: "Template text",
+          alt: "template",
           id: page,
           sectionHeadline: 0,
           sectionTextId: 0,
         }}
+        data={data}
       />
+
       <hr />
+
       {/* Breaker section  */}
       {/* test design - Hvem er vi */}
       <Container>

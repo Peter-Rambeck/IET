@@ -1,5 +1,5 @@
 import { Container, Row, Card, Col } from "react-bootstrap";
-import data from "../pages/allData.json";
+//import data from "../assets/json/allData.json";
 
 function TopBodyBadge({ props }) {
   return (

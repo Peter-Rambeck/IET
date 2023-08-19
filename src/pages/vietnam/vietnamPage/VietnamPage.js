@@ -3,13 +3,15 @@ import heroImage from "../../../images/vietnamPage/Vietnam.jpg";
 import PageHeadline from "../../../components/PageHeadline";
 import TopBody from "../../../components/TopBody";
 import SectionImageLeftWithHorizontalSeparator from "../../../components/SectionImageLeftWithHorizontalSeparator";
+import SectionImageRightWithHorizontalSeparator from "../../../components/SectionImageRightWithHorizontalSeparator";
 import SectionImageRightNoSeparator from "../../../components/SectionImageRightNoSeparator";
+import data from "../../../assets/json/vietnam/VietnamEN.json";
 
 export default function vietnamPage() {
   return (
     <>
       {/* Page headline */}
-      <PageHeadline id={"vietnamPage"} />
+      <PageHeadline id={"vietnamPage"} data={data} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
@@ -17,7 +19,7 @@ export default function vietnamPage() {
       </Container>
 
       {/* Top body */}
-      <TopBody id={"vietnamPage"} />
+      <TopBody id={"vietnamPage"} data={data} />
 
       <hr />
 
@@ -34,6 +36,21 @@ export default function vietnamPage() {
           sectionHeadline: 0,
           sectionTextId: 0,
         }}
+        data={data}
+      />
+
+      <hr />
+
+      <SectionImageRightWithHorizontalSeparator
+        props={{
+          image: null,
+          cardText: "The heart of Indochina 2",
+          alt: "Indochina Explorers map",
+          id: "vietnamPage",
+          sectionHeadline: 1,
+          sectionTextId: 1,
+        }}
+        data={data}
       />
 
       <hr />
@@ -49,42 +66,20 @@ export default function vietnamPage() {
           >
             <>
               <div style={{ textAlign: "right" }}>
-                <h4>Hvem er vi?</h4>
+                <h4>Section x</h4>
               </div>
             </>
           </Col>
           <Col lg={7}>
-            Om du vælger at tage oplevelserne helt tæt på cyklende på mountain
-            bike gennem landskabet og lokale landsbyer eller hoppe på hovedet,
-            har vi været der.
+            Non ea eiusmod magna in tempor laborum. Laboris aute Lorem deserunt
+            exercitation commodo. Ad elit cillum eu cupidatat magna sit nostrud
+            ut ullamco excepteur incididunt. Proident anim do magna aliqua
+            proident aute esse exercitation proident.
             <br />
             <br />
-            Med 20 år som Indokina boende og leverandør til skandinaviske og
-            alverdens rejsende har vi trådt på hver en støvet sti, besøgt alle
-            kroge, dyppet tærende i det klare blå vand fra alle sandstrande og
-            udforsket alt for at på første hånd kan opfylde din specielle
-            rejse-drøm
           </Col>
         </Row>
       </Container>
-
-      <hr />
-
-      {/* Product section  */}
-      {/* First section index [0] */}
-      {/* SectionImageRight - no separator */}
-      {/* Indochina Map + Indochina text  */}
-
-      <SectionImageRightNoSeparator
-        props={{
-          image: null,
-          cardText: "The heart of Indochina",
-          alt: "Indochina Explorers map",
-          id: "vietnamPage",
-          sectionHeadline: 1,
-          sectionTextId: 1,
-        }}
-      />
 
       <hr />
     </>
