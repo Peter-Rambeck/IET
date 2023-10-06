@@ -1,13 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
-import heroImage from "../../images/thailandPage/BangkokGrandPalace.jpg";
-import PageHeadline from "../../components/PageHeadline";
-import SubHeadLineWithText from "../../components/SubHeadLineWithText";
-import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
-import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
-import data from "../../assets/json/thailand/ThailandEN.json";
+import heroImage from "../images/homePage/heroImage.jpg";
+import TH_Northern_Delights from "../images/homePage/TH_Northern_Delights.jpg";
+import Indochina_Map from "../images/homePage/Indochina_Map.png";
+import PageHeadline from "./../components/PageHeadline";
+import TopBody from "./../components/TopBody";
+import SectionImageLeftWithHorizontalSeparator from "./../components/SectionImageLeftWithHorizontalSeparator";
+import SectionImageRightNoSeparator from "./../components/SectionImageRightNoSeparator";
+import data from "../assets/json/template/Template.json";
 
-export default function thailandPage() {
-  const page = "thailandPage";
+export default function template() {
+  const page = "template";
   return (
     <>
       {/* Page headline */}
@@ -19,34 +21,23 @@ export default function thailandPage() {
       </Container>
 
       {/* Top body */}
-      <SubHeadLineWithText
-        props={{
-          image: "",
-          cardText: "",
-          alt: "",
-          id: page,
-          subHeadline: 0,
-          subText: 0,
-          textAlign: "",
-        }}
-        data={data}
-      />
+      <TopBody id={page} data={data} />
 
       <hr />
 
       {/* First section index [0] */}
       {/* SectionImageLeft */}
       {/* Indochina Map + Indochina text  */}
-
       <SectionImageLeftWithHorizontalSeparator
         props={{
-          image: null,
-          cardText: "The heart of Indochina",
-          alt: "Indochina Explorers map",
+          image: Indochina_Map,
+          cardText: "Template text",
+          alt: "template",
           id: page,
           sectionHeadline: 0,
           sectionTextId: 0,
         }}
+        data={data}
       />
 
       <hr />
@@ -80,26 +71,24 @@ export default function thailandPage() {
           </Col>
         </Row>
       </Container>
-
       <hr />
-
       {/* Product section  */}
       {/* First section index [0] */}
       {/* SectionImageRight - no separator */}
       {/* Indochina Map + Indochina text  */}
-
       <SectionImageRightNoSeparator
         props={{
-          image: null,
-          cardText: "The heart of Indochina",
-          alt: "Indochina Explorers map",
           id: page,
           sectionHeadline: 1,
           sectionTextId: 1,
+          image: TH_Northern_Delights,
+          cardText: "Northern Delights",
+          alt: "Northern Thailand",
         }}
       />
-
       <hr />
     </>
   );
 }
+
+export { data };

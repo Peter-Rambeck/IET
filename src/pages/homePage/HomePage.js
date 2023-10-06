@@ -1,28 +1,44 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homePageData from "./HomePageData.json";
-import heroImage from "./images/heroImage.jpg";
-import TH_Northern_Delights from "./images/TH_Northern_Delights.jpg";
-import Indochina_Map from "./images/Indochina_Map.png";
+//import homePageData from "../../assets/json/homePage/HomePageDK.json";
+import heroImage from "../../images/homePage/heroImage.jpg";
+import TH_Northern_Delights from "../../images/homePage/TH_Northern_Delights.jpg";
+import Indochina_Map from "../../images/homePage/Indochina_Map.png";
 import PageHeadline from "../../components/PageHeadline";
-import TopBody from "../../components/TopBody";
+import SubHeadLineWithText from "../../components/SubHeadLineWithText";
 import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
 import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
-const data = homePageData;
+import data from "../../assets/json/homePage/HomePageDK.json";
 
 export default function homePage() {
   const page = "homePage";
   return (
     <>
       {/* Page headline */}
-      <PageHeadline id={page} />
+      <PageHeadline id={page} data={data} />
 
       {/* Head image */}
       <Container fluid className="heroImage-container">
-        <img alt="Beach wedding" src={heroImage} className="heroImage" />
+        <img
+          alt="Beach wedding"
+          src={heroImage}
+          //data={data}
+          className="heroImage"
+        />
       </Container>
 
       {/* Top body */}
-      <TopBody id={page} />
+      <SubHeadLineWithText
+        props={{
+          image: "",
+          cardText: "",
+          alt: "",
+          id: page,
+          subHeadline: 0,
+          subText: 0,
+          textAlign: "",
+        }}
+        data={data}
+      />
 
       <hr />
 
@@ -39,6 +55,7 @@ export default function homePage() {
           sectionHeadline: 0,
           sectionTextId: 0,
         }}
+        data={data}
       />
 
       <hr />
@@ -89,6 +106,7 @@ export default function homePage() {
           cardText: "Northern Delights",
           alt: "Northern Thailand",
         }}
+        data={data}
       />
 
       <hr />

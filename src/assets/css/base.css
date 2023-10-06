@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Section
+---------------------*/
+.section {
+  padding: 100px 0;
+  position: relative;
+
+  /*
+
+    @include down-md {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  
+    @include down-sm {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  
+  .m-15px-tb {
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+
+    */
+}
+
+.separated {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: center;
+
+  /*
+    .theme-light & {
+    }
+    @include down-md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include down-sm {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    */
+}

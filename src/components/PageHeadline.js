@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
-import data from "../pages/allData.json";
+//import data from "../assets/json/allData.json";
 
-function PageHeadline({ id }) {
+function PageHeadline({ data, id }) {
   return (
     <>
       <Container className={["spacing-headline"].join(" ")}>
@@ -12,8 +12,16 @@ function PageHeadline({ id }) {
                 item.pageHeadline &&
                 item.pageTagline && (
                   <div className="center" key={item.id}>
-                    <h1>{item.pageHeadline}</h1>
-                    <h3>{item.pageTagline}</h3>
+                    <div
+                      className="h1"
+                      dangerouslySetInnerHTML={{ __html: item["pageHeadline"] }}
+                    ></div>
+                    {/*<h2>{item.pageHeadline}</h2>*/}
+                    {/*<h3>{item.pageTagline}</h3>*/}
+                    <div
+                      className="h3"
+                      dangerouslySetInnerHTML={{ __html: item["pageTagline"] }}
+                    ></div>
                   </div>
                 )
               );

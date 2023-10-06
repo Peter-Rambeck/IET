@@ -1,0 +1,37 @@
+[
+  {
+    "id": "template",
+    "isVisible": true,
+    "pageHeadline": "Template headline",
+    "pageTagline": "Template tag line",
+    "heroImage": "/static/media/Wedding.86366101fd82d51b8b56.jpg",
+    "subHeadline": "Template subHeadline",
+    "subText": [
+      [
+        "Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere voluptate\n",
+        "dicta obcaecati deserunt nobis suscipit eaque - Section right?"
+      ]
+    ],
+    "sectionHeadline": [
+      [
+        "Template sectionHeadline"
+      ],
+      [
+        "Template sectionHeadline 2"
+      ]
+    ],
+    "sectionText": [
+      [
+        "Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere voluptate\n",
+        "dicta obcaecati deserunt nobis suscipit eaque - Section right?"
+      ],
+      [
+        "Lorem, ipsum dolor sit amet consectetur\n",
+        "adipisicing elit. Molestias aut, repellat ipsum facere voluptate\n",
+        "dicta obcaecati deserunt nobis suscipit eaque - Section right?"
+      ]
+    ]
+  }
+]

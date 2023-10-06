@@ -1,9 +1,22 @@
 import { Container } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavDropdown } from "react-bootstrap";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Nav } from "react-bootstrap";
 import Logo from "../images/Logo.png";
+import "../assets/css/navbar.css";
 
 function Navigation() {
+  /*
+  const [show, setShow] = useState(false);
+  const showDropdown = (e) => {
+    setShow(!show);
+  };
+
+  const hideDropdown = (e) => {
+    setShow(false);
+  };
+*/
+
   return (
     <>
       {/* Navbar logo */}
@@ -28,27 +41,20 @@ function Navigation() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mx-auto parent ">
-              <Nav.Link href="/thailand">Thailand</Nav.Link>
-              <Nav.Link href="/vietnam">Vietnam</Nav.Link>
-              <Nav.Link href="/tonkin">Tonkin</Nav.Link>
-              <Nav.Link href="#link">Malaysia</Nav.Link>
-              <Nav.Link href="#link">About</Nav.Link>
-              {/*
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              */}
+            <Nav className="mx-auto parent sb-menu-transition">
+              {/*<Nav.Link href="/thailand">Thailand</Nav.Link>*/}
+              <ul class="nav navbar-nav">
+                <li>
+                  <div class="dropdown">
+                    <Nav.Link href="/vietnam">Vietnam</Nav.Link>
+                    <div class="dropdown-content">
+                      <Nav.Link href="/tonkin">Tonkin</Nav.Link>
+                    </div>
+                  </div>
+                </li>
+                <Nav.Link href="#link">Malaysia</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+              </ul>
             </Nav>
           </Navbar.Collapse>
         </Container>
