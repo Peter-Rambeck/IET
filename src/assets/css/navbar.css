@@ -231,8 +231,10 @@ nav .sb-navigation li:hover ul {
   z-index: 1;
 }
 
-.dropdown-content a {
-  display: block;
+@media (max-width: 991px) {
+  .dropdown-content a {
+    display: inline;
+  }
 }
 
 .dropdown-content a:hover {

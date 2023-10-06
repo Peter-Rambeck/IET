@@ -52,8 +52,6 @@ function Navigation() {
                     </div>
                   </div>
                 </li>
-
-                <Nav.Link href="/tonkin">Tonkin</Nav.Link>
                 <Nav.Link href="#link">Malaysia</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
               </ul>
