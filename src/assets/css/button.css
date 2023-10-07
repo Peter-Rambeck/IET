@@ -1,0 +1,10 @@
+.pik {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
+
+  transition: all 4.2s ease-in-out !important;
+  color: green;
+  transition: 3s;
+}

@@ -5,6 +5,7 @@ import SubHeadLineWithText from "../../components/SubHeadLineWithText";
 import SectionImageLeftWithHorizontalSeparator from "../../components/SectionImageLeftWithHorizontalSeparator";
 import SectionImageRightNoSeparator from "../../components/SectionImageRightNoSeparator";
 import data from "../../assets/json/thailand/ThailandEN.json";
+import LogicalNot from "../components/ToggleNav";
 
 export default function thailandPage() {
   const page = "thailandPage";
@@ -48,6 +49,7 @@ export default function thailandPage() {
           sectionTextId: 0,
         }}
       />
+      <LogicalNot />
 
       <hr />
 
